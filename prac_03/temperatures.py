@@ -4,6 +4,7 @@ Q - Quit"""
 
 
 def main():
+    """Program that coverts temperature based on user input"""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
@@ -23,11 +24,13 @@ def main():
 
 
 def calculate_celsius(fahrenheit):
+    """Convert fahrenheit to celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
 
 def calculate_fahrenheit(celsius):
+    """Convert celsius to fahrenheit"""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
