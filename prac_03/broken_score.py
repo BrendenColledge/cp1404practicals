@@ -5,6 +5,8 @@ def main():
     """Program gets a score input and returns a rating"""
     score = int(input("Enter Score: "))
     print(determine_rating(score))
+    random_score = random.randint(0, 100)
+    print(determine_rating(random_score))
 
 
 def determine_rating(score):
